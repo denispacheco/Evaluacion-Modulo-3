@@ -1,0 +1,59 @@
+/*cambia todos los elemento que pertenecen a una etiqueta (en este caso h1)*/
+h1{
+    background-color: aqua;
+    color:blue;
+}
+
+/*cambiar un solo elemento en específico, usando la ID (atributo ID)*/
+#titulo2{
+    border-width: 10px;
+    border-style: dashed;
+    border-color: brown;
+    background-color: yellowgreen;
+    width: 600; /*con % es adaptable, con px es fijo /rem y em son las que mas se usan, son fijas */
+}
+/*asignar un estil opor clase (atributo class)*/
+.titulo{    
+    box-shadow: 10px 10px 30px red;
+    width: 50%;    
+}
+.alternativo{
+    box-shadow: 10px 10px 30px blue;
+}
+.contradiccion{
+    border-width: 10px;
+    border-style: dashed;
+    border-color:chartreuse;
+}
+/*
+orden de importancia de css:
+ID
+clases (de arriba hacia abajo)
+etiqueta
+*/
+
+
+/*aplicado para parrafos que estén dentro de un div*/
+div p{
+    background-color: brown;
+    color: white;
+}
+/*aplicado solo a elemento p con clase parrafo*/
+div p.parrafo{
+    background-color: green;
+    color: white;
+}
+
+
+/*propiedades compartidas*/
+p,div,h1{
+  background-color: black;
+}
+/*se agrega una propiedad individual*/
+p{ 
+    color: white;
+}
+
+
+
+
